@@ -1,0 +1,1071 @@
+scop//playlist.
+
+rg//1
+playlist(playlist_relaxare) cu fact_cert//100
+daca ->
+	+ gen =? clasic
+	+ durata =? medie
+.
+
+rg//13
+playlist(playlist_nervos) cu fact_cert//100
+daca ->
+	+ gen =? metal
+	+ durata =? lunga
+.
+
+rg//14
+playlist(playlist_ploaie) cu fact_cert//100
+daca ->
+	+ gen =? alternativ
+	+ durata =? foarte_lunga
+	+ vreme =? ploaie
+.
+
+rg//15
+playlist(playlist_insorit) cu fact_cert//100
+daca ->
+	+ gen =? pop
+	+ durata =? foarte_lunga
+	+ vreme =? insorit
+.
+
+rg//16
+playlist(playlist_nostalgic) cu fact_cert//100
+daca ->
+	+ gen =? clasic_rock
+	+ durata =? medie
+.
+
+rg//17
+playlist(playlist_petrecere) cu fact_cert//100
+daca ->
+	+ gen =? electronic
+	+ durata =? foarte_lunga
+.
+
+rg//2
+playlist(playlist_somn) cu fact_cert//100
+daca ->
+	+ activitate =? somn
+	+ durata =? scurta
+.
+
+rg//3
+playlist(playlist_citit) cu fact_cert//100
+daca ->
+	+ activitate =? citit
+	+ durata =? foarte_lunga
+.
+
+rg//4
+playlist(playlist_studiu) cu fact_cert//100
+daca ->
+	+ activitate =? studiu
+	+ durata =? foarte_lunga
+.
+
+
+rg//5
+playlist(playlist_alergat) cu fact_cert//100
+daca ->
+	+ activitate =? sport
+	+ tip_sport =? alergat
+	+ durata =? lung
+.
+
+rg//6
+playlist(playlist_sala) cu fact_cert//100
+daca ->
+	+ activitate =? sport
+	+ tip_sport =? sala
+	+ durata =? medie
+.
+
+rg//7
+playlist(playlist_dus) cu fact_cert//100
+daca ->
+	+ activitate =? cantat
+	+ durata =? scurta
+	+ era =? 2000
+.
+
+rg//8
+playlist(playlist_dus_30) cu fact_cert//100
+daca ->
+	+ activitate =? cantat
+	+ durata =? scurta
+	+ era =? 2010
+.
+
+rg//9
+playlist(playlist_dus_3060) cu fact_cert//100
+daca ->
+	+ activitate =? cantat
+	+ durata =? scurta
+	+ era =? 1990
+.
+
+rg//10
+playlist(playlist_dus_3060) cu fact_cert//100
+daca ->
+	+ activitate =? cantat
+	+ durata =? scurta
+	+ era =? 1980
+.
+
+rg//11
+playlist(playlist_dus_6080) cu fact_cert//100
+daca ->
+	+ activitate =? cantat
+	+ durata =? scurta
+	+ era =? 1970
+.
+
+rg//12
+playlist(playlist_naveta) cu fact_cert//100
+daca ->
+	+ activitate =? naveta
+	+ durata =? lunga
+.
+
+rg//18
+playlist(playlist_plaja) cu fact_cert//100
+daca ->
+	+ activitate =? plaja
+	+ durata =? foarte_lunga
+.
+
+rg//19
+playlist(playlist_90_plimbare) cu fact_cert//100
+daca ->
+	+ activitate =? condus
+	+ durata =? foarte_lunga
+	+ era =? 1990
+.
+
+rg//20
+playlist(playlist_80_plimbare) cu fact_cert//100
+daca ->
+	+ activitate =? condus
+	+ durata =? foarte_lunga
+	+ era =? 1980
+.
+
+
+
+
+rg//21
+emotie_relaxat(T) cu fact_cert//90
+daca ->
+	+ concediu_recent
+	+ weekend_in_oras
+.
+	
+rg//22
+emotie_relaxat(T) cu fact_cert//80
+daca ->
+	+ nu(concediu_recent)
+	+ weekend_in_oras
+.
+	
+rg//23
+emotie_relaxat(T) cu fact_cert//90
+daca ->
+	+ concediu_recent
+	+ nu(weekend_in_oras)
+.
+	
+rg//24
+emotie_relaxat(F) cu fact_cert//100
+daca ->
+	+ nu(concediu_recent)
+	+ nu(weekend_in_oras)
+.
+	
+	
+	
+	
+	
+rg//25
+emotie_furios(T) cu fact_cert//100
+daca ->
+	+ flamand
+	+ stresat
+.
+	
+rg//26
+emotie_furios(T) cu fact_cert//80
+daca ->
+	+ nu(flamand)
+	+ stresat
+.
+	
+rg//27
+emotie_furios(T) cu fact_cert//70
+daca ->
+	+ flamand
+	+ nu(stresat)
+.
+	
+rg//28
+emotie_furios(F) cu fact_cert//90
+daca ->
+	+ nu(flamand)
+	+ nu(stresat)
+.
+	
+	
+	
+	
+	
+rg//29
+emotie_fericit(T) cu fact_cert//80
+daca ->
+	+ calatorit_recent
+	+ nu(calatorie_afacere)
+.
+	
+rg//30
+emotie_fericit(T) cu fact_cert//60
+daca ->
+	+ calatorit_recent
+	+ calatorie_afacere
+.
+	
+rg//31
+emotie_fericit(F) cu fact_cert//90
+daca ->
+	+ nu(calatorit_recent)
+	+ nu(calatorie_afacere)
+.
+	
+	
+	
+	
+	
+rg//32
+emotie_melancolic(T) cu fact_cert//95
+daca ->
+	+ ore_suplimentare
+	+ nu(apreciere)
+.
+	
+rg//33
+emotie_melancolic(F) cu fact_cert//80
+daca ->
+	+ nu(ore_suplimentare)
+	+ apreciere
+.
+	
+rg//34
+emotie_melancolic(T) cu fact_cert//70
+daca ->
+	+ ore_suplimentare
+	+ apreciere
+.
+	
+rg//35
+emotie_melancolic(F) cu fact_cert//80
+daca ->
+	+ nu(ore_suplimentare)
+	+ nu(apreciere)
+.
+	
+	
+	
+	
+	
+rg//36
+emotie_nostalgic(T) cu fact_cert//100
+daca ->
+	+ dor_persoana
+	+ dor_perioada
+.
+	
+rg//37
+emotie_nostalgic(T) cu fact_cert//90
+daca ->
+	+ nu(dor_persoana)
+	+ dor_perioada
+.
+	
+rg//38
+emotie_nostalgic(T) cu fact_cert//70
+daca ->
+	+ dor_persoana
+	+ nu(dor_perioada)
+.
+	
+rg//39
+emotie_nostalgic(F) cu fact_cert//100
+daca ->
+	+ nu(dor_persoana)
+	+ nu(dor_perioada)
+.
+	
+	
+	
+	
+	
+rg//40
+emotie_energic(T) cu fact_cert//100
+daca ->
+	+ dormit_destul
+	+ baut_cafea
+.
+	
+rg//41
+emotie_energic(T) cu fact_cert//70
+daca ->
+	+ nu(dormit_destul)
+	+ baut_cafea
+.
+	
+rg//42
+emotie_energic(T) cu fact_cert//80
+daca ->
+	+ dormit_destul
+	+ nu(baut_cafea)
+.
+	
+rg//43
+emotie_energic(F) cu fact_cert//100
+daca ->
+	+ nu(dormit_destul)
+	+ nu(baut_cafea)
+.
+
+rg//44
+era(1970) cu fact_cert//90
+daca ->
+	+ varsta =? senior
+	+ nu(de_moda_veche)
+.
+	
+rg//45
+era(1970) cu fact_cert//100
+daca ->
+	+ varsta =? senior
+	+ de_moda_veche
+.
+	
+rg//46
+era(1970) cu fact_cert//80
+daca ->
+	+ varsta =? adult
+	+ de_moda_veche
+.
+	
+rg//47
+era(1980) cu fact_cert//90
+daca ->
+	+ varsta =? adult
+	+ nu(de_moda_veche)
+.
+	
+rg//48
+era(1990) cu fact_cert//100
+daca ->
+	+ varsta =? adult
+	+ nu(de_moda_veche)
+.
+	
+rg//49
+era(1990) cu fact_cert//80
+daca ->
+	+ varsta =? tanar
+	+ de_moda_veche
+.
+	
+rg//50
+era(2000) cu fact_cert//100
+daca ->
+	+ varsta =? tanar
+	+ nu(de_moda_veche)
+.
+	
+rg//51
+era(2010) cu fact_cert//90
+daca ->
+	+ varsta =? tanar
+	+ nu(de_moda_veche)
+.
+
+rg//52
+gen(clasic) cu fact_cert//100
+daca ->
+	+ emotie_relaxat
+	+ emotie_fericit
+	+ emotie_melancolic
+	+ emotie_nostalgic
+.
+
+rg//53
+gen(clasic) cu fact_cert//90
+daca ->
+	+ emotie_relaxat
+	+ nu(emotie_fericit)
+	+ emotie_melancolic
+	+ emotie_nostalgic
+.
+
+rg//54
+gen(clasic) cu fact_cert//70
+daca ->
+	+ emotie_relaxat
+	+ emotie_fericit
+	+ nu(emotie_melancolic)
+	+ emotie_nostalgic
+.
+
+rg//55
+gen(clasic) cu fact_cert//60
+daca ->
+	+ emotie_relaxat
+	+ nu(emotie_fericit)
+	+ nu(emotie_melancolic)
+	+ emotie_nostalgic
+.
+
+rg//56
+gen(clasic) cu fact_cert//80
+daca ->
+	+ emotie_relaxat
+	+ emotie_fericit
+	+ emotie_melancolic
+	+ nu(emotie_nostalgic)
+.
+
+rg//57
+gen(clasic) cu fact_cert//70
+daca ->
+	+ emotie_relaxat
+	+ nu(emotie_fericit)
+	+ emotie_melancolic
+	+ nu(emotie_nostalgic)
+.
+
+rg//58
+gen(clasic) cu fact_cert//50
+daca ->
+	+ emotie_relaxat
+	+ emotie_fericit
+	+ nu(emotie_melancolic)
+	+ nu(emotie_nostalgic)
+.
+
+rg//59
+gen(clasic) cu fact_cert//40
+daca ->
+	+ emotie_relaxat
+	+ nu(emotie_fericit)
+	+ nu(emotie_melancolic)
+	+ nu(emotie_nostalgic)
+.
+
+rg//60
+gen(clasic) cu fact_cert//60
+daca ->
+	+ nu(emotie_relaxat)
+	+ emotie_fericit
+	+ emotie_melancolic
+	+ emotie_nostalgic
+.
+
+rg//61
+gen(clasic) cu fact_cert//50
+daca ->
+	+ nu(emotie_relaxat)
+	+ nu(emotie_fericit)
+	+ emotie_melancolic
+	+ emotie_nostalgic
+.
+
+rg//62
+gen(clasic) cu fact_cert//30
+daca ->
+	+ nu(emotie_relaxat)
+	+ emotie_fericit
+	+ nu(emotie_melancolic)
+	+ emotie_nostalgic
+.
+
+rg//63
+gen(clasic) cu fact_cert//20
+daca ->
+	+ nu(emotie_relaxat)
+	+ nu(emotie_fericit)
+	+ nu(emotie_melancolic)
+	+ emotie_nostalgic
+.
+
+rg//64
+gen(clasic) cu fact_cert//40
+daca ->
+	+ nu(emotie_relaxat)
+	+ emotie_fericit
+	+ emotie_melancolic
+	+ nu(emotie_nostalgic)
+.
+
+rg//65
+gen(clasic) cu fact_cert//30
+daca ->
+	+ nu(emotie_relaxat)
+	+ nu(emotie_fericit)
+	+ emotie_melancolic
+	+ nu(emotie_nostalgic)
+.
+
+rg//66
+gen(clasic) cu fact_cert//10
+daca ->
+	+ nu(emotie_relaxat)
+	+ emotie_fericit
+	+ nu(emotie_melancolic)
+	+ nu(emotie_nostalgic)
+.
+
+
+
+rg//67
+gen(metal) cu fact_cert//100
+daca ->
+	+ emotie_energic
+	+ emotie_furios
+	+ emotie_fericit
+.
+
+rg//68
+gen(metal) cu fact_cert//70
+daca ->
+	+ nu(emotie_energic)
+	+ emotie_furios
+	+ emotie_fericit
+.
+
+rg//69
+gen(metal) cu fact_cert//40
+daca ->
+	+ emotie_energic
+	+ nu(emotie_furios)
+	+ emotie_fericit
+.
+
+rg//70
+gen(metal) cu fact_cert//10
+daca ->
+	+ nu(emotie_energic)
+	+ nu(emotie_furios)
+	+ emotie_fericit
+.
+
+rg//71
+gen(metal) cu fact_cert//90
+daca ->
+	+ emotie_energic
+	+ emotie_furios
+	+ nu(emotie_fericit)
+.
+
+rg//72
+gen(metal) cu fact_cert//60
+daca ->
+	+ nu(emotie_energic)
+	+ emotie_furios
+	+ nu(emotie_fericit)
+.
+
+rg//73
+gen(metal) cu fact_cert//30
+daca ->
+	+ emotie_energic
+	+ nu(emotie_furios)
+	+ nu(emotie_fericit)
+.
+rg//74
+gen(pop) cu fact_cert//100
+daca ->
+	+ emotie_energic
+	+ emotie_fericit
+	+ emotie_nostalgic
+	+ emotie_relaxat
+.
+
+
+rg//75
+gen(pop) cu fact_cert//80
+daca ->
+	+ nu(emotie_energic)
+	+ emotie_fericit
+	+ emotie_nostalgic
+	+ emotie_relaxat
+.
+
+rg//76
+gen(pop) cu fact_cert//40
+daca ->
+	+ emotie_energic
+	+ nu(emotie_fericit)
+	+ emotie_nostalgic
+	+ emotie_relaxat
+.
+
+rg//77
+gen(pop) cu fact_cert//20
+daca ->
+	+ nu(emotie_energic)
+	+ nu(emotie_fericit)
+	+ emotie_nostalgic
+	+ emotie_relaxat
+.
+
+rg//78
+gen(pop) cu fact_cert//85
+daca ->
+	+ emotie_energic
+	+ emotie_fericit
+	+ nu(emotie_nostalgic)
+	+ emotie_relaxat
+.
+
+rg//79
+gen(pop) cu fact_cert//65
+daca ->
+	+ nu(emotie_energic)
+	+ emotie_fericit
+	+ nu(emotie_nostalgic)
+	+ emotie_relaxat
+.
+
+rg//80
+gen(pop) cu fact_cert//25
+daca ->
+	+ emotie_energic
+	+ nu(emotie_fericit)
+	+ nu(emotie_nostalgic)
+	+ emotie_relaxat
+.
+
+rg//81
+gen(pop) cu fact_cert//5
+daca ->
+	+ nu(emotie_energic)
+	+ nu(emotie_fericit)
+	+ nu(emotie_nostalgic)
+	+ emotie_relaxat
+.
+
+rg//82
+gen(pop) cu fact_cert//95
+daca ->
+	+ emotie_energic
+	+ emotie_fericit
+	+ emotie_nostalgic
+	+ nu(emotie_relaxat)
+.
+
+rg//83
+gen(pop) cu fact_cert//75
+daca ->
+	+ nu(emotie_energic)
+	+ emotie_fericit
+	+ emotie_nostalgic
+	+ nu(emotie_relaxat)
+.
+
+rg//84
+gen(pop) cu fact_cert//35
+daca ->
+	+ emotie_energic
+	+ nu(emotie_fericit)
+	+ emotie_nostalgic
+	+ nu(emotie_relaxat)
+.
+
+rg//85
+gen(pop) cu fact_cert//15
+daca ->
+	+ nu(emotie_energic)
+	+ nu(emotie_fericit)
+	+ emotie_nostalgic
+	+ nu(emotie_relaxat)
+.
+
+rg//86
+gen(pop) cu fact_cert//80
+daca ->
+	+ emotie_energic
+	+ emotie_fericit
+	+ nu(emotie_nostalgic)
+	+ nu(emotie_relaxat)
+.
+
+rg//87
+gen(pop) cu fact_cert//60
+daca ->
+	+ nu(emotie_energic)
+	+ emotie_fericit
+	+ nu(emotie_nostalgic)
+	+ nu(emotie_relaxat)
+.
+
+rg//88
+gen(pop) cu fact_cert//20
+daca ->
+	+ emotie_energic
+	+ nu(emotie_fericit)
+	+ nu(emotie_nostalgic)
+	+ nu(emotie_relaxat)
+.
+rg//89
+gen(alternativ) cu fact_cert//100
+daca ->
+	+ emotie_nostalgic
+	+ emotie_relaxat
+	+ emotie_melancolic
+.
+
+rg//90
+gen(alternativ) cu fact_cert//95
+daca ->
+	+ nu(emotie_nostalgic)
+	+ emotie_relaxat
+	+ emotie_melancolic
+.
+
+rg//91
+gen(alternativ) cu fact_cert//75
+daca ->
+	+ emotie_nostalgic
+	+ nu(emotie_relaxat)
+	+ emotie_melancolic
+.
+
+rg//92
+gen(alternativ) cu fact_cert//70
+daca ->
+	+ nu(emotie_nostalgic)
+	+ nu(emotie_relaxat)
+	+ emotie_melancolic
+.
+
+rg//93
+gen(alternativ) cu fact_cert//30
+daca ->
+	+ emotie_nostalgic
+	+ emotie_relaxat
+	+ nu(emotie_melancolic)
+.
+
+rg//94
+gen(alternativ) cu fact_cert//25
+daca ->
+	+ nu(emotie_nostalgic)
+	+ emotie_relaxat
+	+ nu(emotie_melancolic)
+.
+
+rg//95
+gen(alternativ) cu fact_cert//5
+daca ->
+	+ emotie_nostalgic
+	+ nu(emotie_relaxat)
+	+ nu(emotie_melancolic)
+.
+
+rg//96
+gen(electronic) cu fact_cert//100
+daca ->
+	+ emotie_fericit
+	+ emotie_energic
+.
+
+rg//97
+gen(electronic) cu fact_cert//75
+daca ->
+	+ nu(emotie_fericit)
+	+ emotie_energic
+.
+
+rg//98
+gen(electronic) cu fact_cert//25
+daca ->
+	+ emotie_fericit
+	+ nu(emotie_energic)
+.
+rg//99
+gen(clasic_rock) cu fact_cert//100
+daca ->
+	+ emotie_melancolic
+	+ emotie_furios
+	+ emotie_energic
+	+ emotie_nostalgic
+.
+
+rg//100
+gen(clasic_rock) cu fact_cert//85
+daca ->
+	+ nu(emotie_melancolic)
+	+ emotie_furios
+	+ emotie_energic
+	+ emotie_nostalgic
+.
+
+rg//101
+gen(clasic_rock) cu fact_cert//95
+daca ->
+	+ emotie_melancolic
+	+ nu(emotie_furios)
+	+ emotie_energic
+	+ emotie_nostalgic
+.
+
+rg//102
+gen(clasic_rock) cu fact_cert//80
+daca ->
+	+ nu(emotie_melancolic)
+	+ nu(emotie_furios)
+	+ emotie_energic
+	+ emotie_nostalgic
+.
+
+rg//103
+gen(clasic_rock) cu fact_cert//80
+daca ->
+	+ emotie_melancolic
+	+ emotie_furios
+	+ nu(emotie_energic)
+	+ emotie_nostalgic
+.
+
+rg//104
+gen(clasic_rock) cu fact_cert//65
+daca ->
+	+ nu(emotie_melancolic)
+	+ emotie_furios
+	+ nu(emotie_energic)
+	+ emotie_nostalgic
+.
+
+rg//105
+gen(clasic_rock) cu fact_cert//75
+daca ->
+	+ emotie_melancolic
+	+ nu(emotie_furios)
+	+ nu(emotie_energic)
+	+ emotie_nostalgic
+.
+
+rg//106
+gen(clasic_rock) cu fact_cert//60
+daca ->
+	+ nu(emotie_melancolic)
+	+ nu(emotie_furios)
+	+ nu(emotie_energic)
+	+ emotie_nostalgic
+.
+
+rg//107
+gen(clasic_rock) cu fact_cert//40
+daca ->
+	+ emotie_melancolic
+	+ emotie_furios
+	+ emotie_energic
+	+ nu(emotie_nostalgic)
+.
+
+rg//108
+gen(clasic_rock) cu fact_cert//25
+daca ->
+	+ nu(emotie_melancolic)
+	+ emotie_furios
+	+ emotie_energic
+	+ nu(emotie_nostalgic)
+.
+
+rg//109
+gen(clasic_rock) cu fact_cert//35
+daca ->
+	+ emotie_melancolic
+	+ nu(emotie_furios)
+	+ emotie_energic
+	+ nu(emotie_nostalgic)
+.
+
+rg//110
+gen(clasic_rock) cu fact_cert//20
+daca ->
+	+ nu(emotie_melancolic)
+	+ nu(emotie_furios)
+	+ emotie_energic
+	+ nu(emotie_nostalgic)
+.
+
+rg//111
+gen(clasic_rock) cu fact_cert//20
+daca ->
+	+ emotie_melancolic
+	+ emotie_furios
+	+ nu(emotie_energic)
+	+ nu(emotie_nostalgic)
+.
+
+rg//112
+gen(clasic_rock) cu fact_cert//5
+daca ->
+	+ nu(emotie_melancolic)
+	+ emotie_furios
+	+ nu(emotie_energic)
+	+ nu(emotie_nostalgic)
+.
+
+rg//113
+gen(clasic_rock) cu fact_cert//15
+daca ->
+	+ emotie_melancolic
+	+ nu(emotie_furios)
+	+ nu(emotie_energic)
+	+ nu(emotie_nostalgic)
+.
+
+
+
+
+
+
+
+
+intreb//de_moda_veche  
+text('Va plac lucrurile vintage?')
+optiuni ->
+? da
+? nu
+.
+
+intreb//varsta
+text('Ce varsta aveti?')
+optiuni ->
+? tanar
+? adult
+? senior
+.
+
+intreb//baut_cafea   
+text('Ati baut cafea de curand?')
+optiuni ->
+? da
+? nu
+.
+
+intreb//dormit_destul   
+text('Ati dormit destul?')
+optiuni ->
+? da
+? nu
+.
+
+intreb//apreciere    
+text('Ati fost apreciat de cineva in ultima perioada?')
+optiuni ->
+? da
+? nu
+? nu_stiu
+.
+
+intreb//ore_suplimentare     
+text('Ati lucrat ore suplimentare in ultima perioada?')
+optiuni ->
+? da
+? nu
+.
+
+intreb//calatorie_afacere      
+text('Ati calatorit in interes de afaceri in ultima perioada?')
+optiuni ->
+? da
+? nu
+.
+
+intreb//calatorit_recent       
+text('Ati calatorit recent in ultima perioada?')
+optiuni ->
+? da
+? nu
+.
+
+intreb//stresat       
+text('Sunteti stresat(a)?')
+optiuni ->
+? da
+? nu
+.
+
+intreb//flamand       
+text('Sunteti flamand?')
+optiuni ->
+? da
+? nu
+.
+
+intreb//weekend_in_oras       
+text('In weekend, ati iesit cu prietenii in oras?')
+optiuni ->
+? da
+? nu
+.
+
+intreb//concediu_recent       
+text('Ati avut concediu recent?')
+optiuni ->
+? da
+? nu
+.
+
+intreb//tip_sport       
+text('Ce tip de sport practicati?')
+optiuni ->
+? sala
+? alergat
+? nu_conteaza
+.
+
+intreb//activitate       
+text('Ce activitate intreprindeti momentan?')
+optiuni ->
+? citit
+? somn
+? studiu
+? sport
+? cantat
+? naveta
+? plaja
+? condus
+? nu_conteaza
+? nu_stiu
+.
+
+intreb//durata       
+text('Pe ce durata de timp va doriti acest playlist?')
+optiuni ->
+? scurta
+? medie
+? lunga
+? foarte_lunga
+? nu_conteaza
+.
+
+intreb//dor_persoana
+text('Va este dor de cineva?')
+optiuni ->
+? da
+? nu
+.
+
+intreb//dor_perioada
+text('Va este dor de o perioada?')
+optiuni ->
+? da
+? nu
+.
